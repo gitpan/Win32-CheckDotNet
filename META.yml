@@ -27,4 +27,4 @@ requires:
   Win32::TieRegistry: 0.26
   Win32API::Registry: 0.30
   perl: 5.016003
-version: 0.01
+version: 0.02

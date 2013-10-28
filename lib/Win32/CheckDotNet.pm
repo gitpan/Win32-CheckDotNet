@@ -10,7 +10,7 @@ use Win32::TieRegistry;
 use Log::Log4perl qw/get_logger :levels/;
 use Data::Dumper qw/Dumper/;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
@@ -39,7 +39,7 @@ Various versions can be checked.
 
 =head2 check_dotnet_1_0()
 
-Checks if .NET version 1.0 ist installed.
+Checks if .NET version 1.0 is installed.
 
 =cut
 
@@ -56,7 +56,7 @@ sub check_dotnet_1_0 {
 
 =head2 check_dotnet_1_1()
 
-Checks if .NET version 1.1 ist installed.
+Checks if .NET version 1.1 is installed.
 
 =cut
 
@@ -73,7 +73,7 @@ sub check_dotnet_1_1 {
 
 =head2 check_dotnet_2_0()
 
-Checks if .NET version 2.0 ist installed.
+Checks if .NET version 2.0 is installed.
 
 =cut
 
@@ -90,7 +90,7 @@ sub check_dotnet_2_0 {
 
 =head2 check_dotnet_3_0()
 
-Checks if .NET version 3.0 ist installed.
+Checks if .NET version 3.0 is installed.
 
 =cut
 
@@ -107,7 +107,7 @@ sub check_dotnet_3_0 {
 
 =head2 check_dotnet_3_5()
 
-Checks if .NET version 3.5 ist installed.
+Checks if .NET version 3.5 is installed.
 
 =cut
 
@@ -124,7 +124,7 @@ sub check_dotnet_3_5 {
 
 =head2 check_dotnet_4_0_full()
 
-Checks if .NET version 4.0 (full) ist installed.
+Checks if .NET version 4.0 (full) is installed.
 
 =cut
 
@@ -141,7 +141,7 @@ sub check_dotnet_4_0_full {
 
 =head2 check_dotnet_4_0_client()
 
-Checks if .NET version 4.0 (client) ist installed.
+Checks if .NET version 4.0 (client) is installed.
 
 =cut
 
@@ -158,7 +158,7 @@ sub check_dotnet_4_0_client {
 
 =head2 check_dotnet_4_5()
 
-Checks if .NET version 4.5 ist installed.
+Checks if .NET version 4.5 is installed.
 
 =cut
 
@@ -175,7 +175,7 @@ sub check_dotnet_4_5 {
 
 =head2 _check_registry_key( $key )
 
-Checks for a given .NET registry key. Return 1 if registry key is present and has value C<0x00000001>.
+Checks for a given .NET registry key. Returns 1 if registry key is present and has value C<0x00000001>.
 Returns 0 if registry key is not present or does not equals C<0x00000001>.
 
 C<$key> has to have C</> as delimiter.
@@ -218,7 +218,8 @@ sub _check_registry_key {
 
 =head1 SEE ALSO
 
-Once I asked how to heck for an installed .NET version. The answer was a link to the list of registry keys that identify if .NET is installed and the Tie::Registry module.
+Once I asked how to heck for an installed .NET version.
+The answer was a link to the list of registry keys that identify if .NET is installed and the Tie::Registry module.
 
 =over
 
